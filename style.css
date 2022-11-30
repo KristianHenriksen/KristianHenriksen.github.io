@@ -1,27 +1,50 @@
 
+/* FONTS */
 
-/* HEADER */
-
-#header{
-    border: 1px solid black;
-    background-color: #00E393;
-}
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+  
 
 /* BODY */
 body{
     background-color: #7EF7A5;
 }
+/* HEADER */
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+    background-color: #00E393;
+}
+
+#header p{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bolder;
+}
+
+/* PALETTE */
+
+#palette{
+    display: flex;
+    flex-direction: column;
+}
+
+#palette
+
 /* CIRCLE */
 
 .maincircle {
-height: 404px;
-width: 404px;
+margin-top: 0%;
+margin-bottom: 10px;
+height: 104px;
+width: 104px;
 }
 
 .slice1 {
 float: left;
-height: 200px;
-width: 200px;
+height: 50px;
+width: 50px;
 border: 1px solid #000;
 background-color: #A1FF5C;
 cursor: pointer;
@@ -36,8 +59,8 @@ background-color: #6C6;
 
 .slice2 {
 float: left;
-height: 200px;
-width: 200px;
+height: 50px;
+width: 50px;
 border: 1px solid #000;
 background-color: #2AF227;
 cursor: pointer;
@@ -51,8 +74,8 @@ background-color: #6C6;
 
 .slice3 {
 float: left;
-height: 200px;
-width: 200px;
+height: 50px;
+width: 50px;
 border: 1px solid #000;
 background-color: #7EF7A5;
 cursor: pointer;
@@ -66,8 +89,8 @@ background-color: #6C6;
 
 .slice4 {
 float: left;
-height: 200px;
-width: 200px;
+height: 50px;
+width: 50px;
 border: 1px solid #000;
 background-color: #00FAF4;
 cursor: pointer;
