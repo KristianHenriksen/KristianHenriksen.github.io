@@ -1,0 +1,80 @@
+
+
+/* HEADER */
+
+#header{
+    border: 1px solid black;
+    background-color: #00E393;
+}
+
+/* BODY */
+body{
+    background-color: #7EF7A5;
+}
+/* CIRCLE */
+
+.maincircle {
+height: 404px;
+width: 404px;
+}
+
+.slice1 {
+float: left;
+height: 200px;
+width: 200px;
+border: 1px solid #000;
+background-color: #A1FF5C;
+cursor: pointer;
+border-radius: 190px 0 0 0;
+-moz-border-radius: 190px 0 0 0;
+-webkit-border-radius: 190px 0 0 0;
+}
+
+.slice1:hover {
+background-color: #6C6;
+}
+
+.slice2 {
+float: left;
+height: 200px;
+width: 200px;
+border: 1px solid #000;
+background-color: #2AF227;
+cursor: pointer;
+border-radius: 0 190px 0 0;
+border-radius: 0 190px 0 0;
+}
+
+.slice2:hover {
+background-color: #6C6;
+}
+
+.slice3 {
+float: left;
+height: 200px;
+width: 200px;
+border: 1px solid #000;
+background-color: #7EF7A5;
+cursor: pointer;
+border-radius: 0 0 0 190px;
+border-radius: 0 0 0 190px;
+}
+
+.slice3:hover {
+background-color: #6C6;
+}
+
+.slice4 {
+float: left;
+height: 200px;
+width: 200px;
+border: 1px solid #000;
+background-color: #00FAF4;
+cursor: pointer;
+border-radius: 0 0 190px 0;
+border-radius: 0 0 190px 0;
+}
+
+.slice4:hover {
+background-color: #6C6;
+}
