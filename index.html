@@ -13,6 +13,18 @@
     #00E393
     -->
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        async function rotate(div){
+            console.log("test")
+            div.classList.add("rotate");
+            await new Promise(r => setTimeout(r, 200));
+            div.classList.remove("rotate");
+
+        }
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+    </script>
 </head>
 <body>
     <!-- HEADER -->
@@ -22,8 +34,8 @@
             <p>This website is created for educational purposes for the developer</p>
         </div>
         <div id="palette">
-            <p>My color palette:</p>
-            <div class="maincircle">
+            <p>Nav bar (coming soon):</p>
+            <div class="maincircle" id="navCircle" onclick="rotate(this)" >
                 <div class="slice1"></div>
                 <div class="slice2"></div>
                 <div class="slice3"></div>
@@ -33,9 +45,9 @@
     </div>
 
     <!-- NAV bar -->
-    <div id ="nav">
+    <!-- <div id ="nav">
     
-    </div>
+    </div> -->
 
     <!-- CONTENT -->
     <div id="mainContent">

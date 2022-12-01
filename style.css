@@ -28,6 +28,7 @@ h3{
     border: 1px solid black;
     background-color: #393E46;
     padding: 10px;
+    box-shadow: 2px 2px 2px  #6D9886;
 }
 
 #header p{
@@ -124,7 +125,6 @@ background-color: #6C6;
 /* NAV */
 #nav {
     border: 1px solid black;
-    height: 20px;
     width: 100%;
     background-color: #6D9886;
 }
@@ -141,6 +141,9 @@ background-color: #6C6;
     margin: 20px;
     width: 100%;
     height: fit-content;
-    border: 1px solid #393E46;
     background-color: #F7F7F7;
+}
+
+.rotate {
+    transform: rotate(30deg);
 }
