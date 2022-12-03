@@ -17,8 +17,12 @@
         async function rotate(div){
             console.log("test")
             div.classList.add("rotate");
+            var content = document.getElementById("content").innerHTML
+            document.getElementById("content").innerHTML = "this feature is not yet implemented..."
             await new Promise(r => setTimeout(r, 200));
             div.classList.remove("rotate");
+            await new Promise(r => setTimeout(r, 1000));
+            document.getElementById("content").innerHTML = content
 
         }
         function sleep(ms) {
@@ -31,7 +35,7 @@
     <div id="header">
         <div>
             <h1>Welcome to my website</h1>
-            <p>This website is created for educational purposes for the developer</p>
+            <p>This website is under development</p>
         </div>
         <div id="palette">
             <p>Nav bar (coming soon):</p>
@@ -65,7 +69,6 @@
             </p>
             
         </div>
-
     </div>
     </body>
 </html>
