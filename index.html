@@ -20,8 +20,8 @@
             var content = document.getElementById("content").innerHTML
             document.getElementById("content").innerHTML = "this feature is not yet implemented..."
             await new Promise(r => setTimeout(r, 200));
-            div.classList.remove("rotate");
             await new Promise(r => setTimeout(r, 1000));
+            div.classList.remove("rotate");
             document.getElementById("content").innerHTML = content
 
         }

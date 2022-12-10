@@ -55,10 +55,25 @@ h3{
 /* CIRCLE */
 
 .maincircle {
-margin: 0px;
-height: 104px;
-width: 104px;
+    margin: 0px;
+    height: 104px;
+    width: 104px;
+    /* transition: transform 1s; */
 }
+
+.rotate {
+    /* transform: rotate(180deg); */
+    animation: spin 0.8s linear;
+}
+
+/* .maincircle:active{
+    transform: rotate(360deg);
+} */
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
 
 .slice1 {
 float: left;
@@ -144,6 +159,3 @@ background-color: #6C6;
     background-color: #F7F7F7;
 }
 
-.rotate {
-    transform: rotate(30deg);
-}
