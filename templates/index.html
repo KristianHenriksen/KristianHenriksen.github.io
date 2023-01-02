@@ -12,43 +12,28 @@
     #00FAF4
     #00E393
     -->
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript">
-        async function rotate(div){
-            console.log("test")
-            div.classList.add("rotate");
-            var content = document.getElementById("content").innerHTML
-            document.getElementById("content").innerHTML = "this feature is not yet implemented..."
-            await new Promise(r => setTimeout(r, 200));
-            await new Promise(r => setTimeout(r, 1000));
-            div.classList.remove("rotate");
-            document.getElementById("content").innerHTML = content
 
-        }
-        function sleep(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
-        }
-        function log(){
-            console.log("click")
-        }
-    </script>
+    <link rel="stylesheet" href="../static/style.css">
+
+    <script src="../static/script.js"></script>
+    
 </head>
 <body>
     <!-- HEADER -->
     <div id="header">
-        <div>
-            <h1>Welcome to my website</h1>
-            <p>This website is under development</p>
-        </div>
-        <div id="palette">
-            <p>Nav bar (coming soon):</p>
-            <div class="maincircle" id="navCircle" onclick="rotate(this)" >
-                <div class="slice1"></div>
-                <div class="slice2"></div>
-                <div class="slice3"></div>
-                <div class="slice4"></div>
+            <div>
+                <h1>Welcome to my website</h1>
+                <p>This website is under development</p>
             </div>
-        </div>
+            <div id="palette">
+                <p>Nav bar (coming soon):</p>
+                <div class="maincircle" id="navCircle" onclick="rotate(this)" >
+                    <div class="slice1"></div>
+                    <div class="slice2"></div>
+                    <div class="slice3"></div>
+                    <div class="slice4"></div>
+                </div>
+            </div>
     </div>
 
 
@@ -62,7 +47,7 @@
     <!-- CONTENT -->
     <div id="mainContent">
 
-        <div id="content">
+        <div class="content" id="content">
             <h3>Who am I?</h3>
             <p> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit tempus dui, eu rhoncus quam molestie ut. Nunc sit amet laoreet sapien, id tempus eros. Proin in tristique est, non vulputate eros. In hac habitasse platea dictumst. Etiam ornare risus dapibus, tincidunt diam quis, malesuada urna. Aenean quis risus justo. Nam lobortis est non massa posuere, quis tincidunt leo eleifend. Mauris ultrices est vel sapien ornare pellentesque. Nunc placerat ultrices eros, sed mollis leo blandit vitae. Ut in eros semper, fringilla nunc in, consequat tellus. Mauris a nulla eget odio pretium aliquam.
