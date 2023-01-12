@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 from flask_frozen import Freezer
 
 app = Flask(__name__)
@@ -9,4 +9,6 @@ def index():
     return render_template("index.html")
 
 if __name__ == '__main__':
-    freezer.freeze()
+    # freezer.freeze()
+    # app.run(debug=True, port=8000)
+    freezer.run(debug=True)
