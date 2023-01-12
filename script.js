@@ -15,4 +15,14 @@ function sleep(ms) {
 function log(){
     console.log("click")
 }
+let app = Vue.createApp({
+    data() {
+        return {
+        }   
+    },
+    methods: {
+        
+    }
+});
+app.mount("#app");
 
