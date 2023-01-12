@@ -71,6 +71,10 @@ h3{
     /* transition: transform 1s; */
 }
 
+.maincircle div {
+    position: relative;
+}
+
 .rotate {
     animation: spin 0.8s linear;
 }
@@ -92,8 +96,10 @@ border-radius: 190px 0 0 0;
 -webkit-border-radius: 190px 0 0 0;
 }
 
-.slice1:hover {
-background-color: #6D9886;
+.slice1 i {
+    position: absolute; 
+    bottom: 7px; 
+    right: 7px; 
 }
 
 .slice2 {
@@ -107,8 +113,10 @@ border-radius: 0 190px 0 0;
 border-radius: 0 190px 0 0;
 }
 
-.slice2:hover {
-background-color: #6D9886;
+.slice2 i {
+    position: absolute; 
+    bottom: 7px; 
+    left: 7px; 
 }
 
 .slice3 {
@@ -122,8 +130,10 @@ border-radius: 0 0 0 190px;
 border-radius: 0 0 0 190px;
 }
 
-.slice3:hover {
-background-color: #6D9886;
+.slice3 i {
+    position: absolute; 
+    top: 7px; 
+    right: 7px; 
 }
 
 .slice4 {
@@ -137,8 +147,14 @@ border-radius: 0 0 190px 0;
 border-radius: 0 0 190px 0;
 }
 
-.slice4:hover {
-background-color: #6D9886;
+.slice4 i {
+    position: absolute; 
+    top: 7px; 
+    left: 7px; 
+}
+
+.slice1:hover, .slice2:hover, .slice3:hover, .slice4:hover{
+    background-color: #6D9886;
 }
 
 
