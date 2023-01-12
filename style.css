@@ -24,7 +24,7 @@ h3{
 #header{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: left;
     background-color: #393E46;
     padding: 10px;
     box-shadow: 2px 2px 2px  #6D9886;
@@ -42,20 +42,29 @@ h3{
     color: #F2E7D5;
 }
 
-/* PALETTE */
+/* TITLE */
 
-#palette{
+#Title {
+    display: flex; /* use flexbox */
+    align-items: center; /* center the text vertically */
+    justify-content: center; /* center the text */
+    width: 80%;
+}
+/* CIRCLE */
+
+#Circle{
     display: flex;
     flex-direction: column;
+    justify-content: end;
+    width: 10%;
+    min-width: 110px;
 }
 
-#palette p {
+#Circle p {
     margin: 0px;
 }
 
-/* CIRCLE */
-
-.maincircle {
+.maincircle {    
     margin: 0px;
     height: 104px;
     width: 104px;
@@ -75,7 +84,7 @@ h3{
 float: left;
 height: 50px;
 width: 50px;
-border: 1px solid #000;
+border: 1px solid #F2E7D5;
 background-color: #393E46;
 cursor: pointer;
 border-radius: 190px 0 0 0;
@@ -84,52 +93,52 @@ border-radius: 190px 0 0 0;
 }
 
 .slice1:hover {
-background-color: #6C6;
+background-color: #6D9886;
 }
 
 .slice2 {
 float: left;
 height: 50px;
 width: 50px;
-border: 1px solid #000;
-background-color: #6D9886;
+border: 1px solid #F2E7D5;
+background-color: #393E46;
 cursor: pointer;
 border-radius: 0 190px 0 0;
 border-radius: 0 190px 0 0;
 }
 
 .slice2:hover {
-background-color: #6C6;
+background-color: #6D9886;
 }
 
 .slice3 {
 float: left;
 height: 50px;
 width: 50px;
-border: 1px solid #000;
-background-color: #F2E7D5;
+border: 1px solid #F2E7D5;
+background-color: #393E46;
 cursor: pointer;
 border-radius: 0 0 0 190px;
 border-radius: 0 0 0 190px;
 }
 
 .slice3:hover {
-background-color: #6C6;
+background-color: #6D9886;
 }
 
 .slice4 {
 float: left;
 height: 50px;
 width: 50px;
-border: 1px solid #000;
-background-color: #F7F7F7;
+border: 1px solid #F2E7D5;
+background-color: #393E46;
 cursor: pointer;
 border-radius: 0 0 190px 0;
 border-radius: 0 0 190px 0;
 }
 
 .slice4:hover {
-background-color: #6C6;
+background-color: #6D9886;
 }
 
 
@@ -184,4 +193,15 @@ nav div {
                 -10px 0px 10px #F7F7F7 ; 
 
 }
+
+/* SYMBOLS */
+
+.material-symbols-outlined {
+    color: #F2E7D5;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
 
