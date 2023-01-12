@@ -6,7 +6,7 @@ freezer = Freezer(app)
 
 @app.route("/")
 def index():
-    return redirect(url_for('index'))
+    return render_template("index.html")
 
 if __name__ == '__main__':
     freezer.freeze()
