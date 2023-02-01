@@ -1,0 +1,55 @@
+#AboutMain{
+    --spacer: 2rem;
+    display: grid;
+    /* gap: var(--spacer); */
+    grid-auto-flow: column;
+    grid-auto-columns: 80%;
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain ;
+}
+
+.AboutContent{
+    height: 500px;
+    background-color: #F2E7D5;
+
+    padding: var(--size-3);
+
+    position: relative;
+    text-align: center;
+
+}
+
+.AboutContent > img {
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    object-fit:cover;
+}
+
+.AboutText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #393E46 ;
+    -webkit-text-stroke: 1px #6D9886;
+}
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline:var(--spacer) ;
+
+}
+
+.snaps-inline > * {
+    scroll-snap-align:center;
+}
+
+.fade-in-slow {
+    opacity: 0;
+    transition: opacity 1200ms ease-in;
+  }
+  
+  .fade-in-slow.appear {
+    opacity: 1;
+  }
