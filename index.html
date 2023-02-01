@@ -8,22 +8,22 @@
     <script src="https://unpkg.com/vue@3.0.5/dist/vue.global.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- colors:
-    #A1FF5C
-    #2AF227
-    #7EF7A5
-    #00FAF4
-    #00E393
+
     -->
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Profile.css">
+    <link rel="stylesheet" href="./Home.css">
+    <link rel="stylesheet" href="./About.css">
 
     <script src="./script.js"></script>
+    <script src="./Profile.js" defer></script>
     
 </head>
-<body>
+<body >
     <div id="app">
         <!-- HEADER -->
-        <div id="header">
+        <div id="header" >
             <div id="Circle">
                 <!-- <p>Nav bar (coming soon):</p> -->
                 <div class="maincircle" id="navCircle" onclick="rotate(this)">
@@ -34,49 +34,97 @@
                 </div>
             </div>
                 <div id="Title">
-                    <h1>Welcome to my website</h1>
+                    <h1 class="fade-in" v-on:click="change(0)">Kristian Gradert Henriksen</h1>
                     <!-- <p>This website is under development</p> -->
                 </div>
         </div>
 
 
-        <nav onclick="log()">
+        <!-- <nav onclick="log()">
             <div id="nav1"></div>
             <div id="nav2"></div>
             <div id="nav3"></div>
             <div id="nav4"></div>
-        </nav>
+        </nav> -->
 
-        <!-- CONTENT0 -->
         <div id="mainContent">
+        <!-- CONTENT1 -->
+            <div class="content" id="content1" style="display: '';">
 
-            <div class="content" id="content1">
-                <h3>Who am I?</h3>
-                <p> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit tempus dui, eu rhoncus quam molestie ut. Nunc sit amet laoreet sapien, id tempus eros. Proin in tristique est, non vulputate eros. In hac habitasse platea dictumst. Etiam ornare risus dapibus, tincidunt diam quis, malesuada urna. Aenean quis risus justo. Nam lobortis est non massa posuere, quis tincidunt leo eleifend. Mauris ultrices est vel sapien ornare pellentesque. Nunc placerat ultrices eros, sed mollis leo blandit vitae. Ut in eros semper, fringilla nunc in, consequat tellus. Mauris a nulla eget odio pretium aliquam.
-                </p>
-                <p>
-                    Fusce mattis faucibus justo, eget facilisis lacus blandit eget. Donec varius lacus ac urna semper, at feugiat augue eleifend. Cras ante est, pulvinar a ligula in, varius luctus erat. Nam vitae sapien et enim laoreet fermentum. Phasellus augue lacus, pretium in lacus eget, pulvinar viverra augue. Proin maximus lacus non lorem gravida euismod. Vestibulum nunc eros, aliquet at lectus id, lobortis tristique enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce fermentum est erat, egestas euismod mi posuere et.
-                </p>
-                <p>
-                    Morbi sed nibh eleifend arcu sollicitudin sagittis et eu urna. Aliquam nec erat at purus porttitor interdum. Pellentesque nisi massa, pharetra in dui sed.
-                </p>
-                
-            </div>
+                <p>Welcome to my website</p>
 
-            <!-- CONTENT1 -->
-            <div class="content" id="content2" style="display: none;">
-            1
+                <!-- <div class="homeContainer">
+                    <div class="sideContainer">
+
+                    </div>
+                    <div class="imageContainer">
+                        <img src="IMG_3152.jpg" class="homeIMG"/>
+                    </div>
+                </div>
+                <div class="homeContainer">
+                    <div class="sideContainer">
+
+                    </div>
+                    <div class="imageContainer">
+                        <img src="IMG_3153.jpg" class="homeIMG"/>
+                    </div>
+                </div>
+                <div class="homeContainer">
+                    <div class="sideContainer">
+
+                    </div>
+                    <div class="imageContainer">
+                        <img src="IMG_3154.jpg" class="homeIMG"/>
+                    </div>
+                </div>
+                <div class="homeContainer">
+                    <div class="sideContainer">
+
+                    </div>
+                    <div class="imageContainer">
+                        <img src="IMG_3155.jpg" class="homeIMG"/>
+                    </div>
+                </div> -->
             </div>
 
             <!-- CONTENT2 -->
-            <div class="content" id="content3" style="display: none;">
-            2
+            <div class="content" id="content2" style="display: '';">
+                <div id="AboutMain" class="snaps-inline fade-in-slow">
+                    <div class="AboutContent">
+                        <img src="IMG_3153.jpg" />
+                        <h3 class="AboutText"> here is some example text</h3>
+                    </div>
+                    <div class="AboutContent">
+                        <img src="IMG_3154.jpg" />
+                        <h3 class="AboutText"> here is some example text</h3>
+                    </div>
+                    <div class="AboutContent">
+                        <img src="IMG_3155.jpg" />
+                        <h3 class="AboutText"> here is some example text</h3>
+                    </div>
+
+                </div>
             </div>
 
             <!-- CONTENT3 -->
-            <div class="content" id="content4" style="display: none;">
-            3
+
+            <div class="content " id="content3" style="display:'';">
+                <div class="fade-in"><h3>About me</h3></div>
+                <div class="fade-in"><p>My Name is Kristian Gradert Henriksen.</p></div>
+                <div class="fade-in"><p>I am a Norwegian student, currently studying computer science at the<a href="https://www.uis.no/en" target="blank"> University of Stavanger.</a></p></div>
+                <div class="fade-in"><p>I created this website to play around with on my free time.</p></div>
+                <div class="fade-in"><p>To read more about this page click <a  v-on:click="change(1)">here</a></p></div>
+                <div class="fade-in"><p>You can also find me on other platforms <a v-on:click="change(3)" >here</a></p></div>
+                <div id="picture" class="fade-in">
+                    <img src="profilePicture.jpeg" alt="ProfilePicture">
+                </div>
+            </div>
+
+            <!-- CONTENT4 -->
+            <div class="content" id="content4" style="display: '';">
+
+                *here i will add some links to other platforms
+                  
             </div>
         </div>
     </div>
